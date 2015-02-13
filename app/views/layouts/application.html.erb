@@ -7,8 +7,60 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+
+<div id="wrapper">
+<!--sidebar -->
+<div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        Treebook
+                    </a>
+                </li>
+                <li>
+                	<%= link_to "Status", statuses_path %>
+                    
+                </li>
+                <li>
+                    <a href="#">Shortcuts</a>
+                </li>
+                <li>
+                    <a href="#">Overview</a>
+                </li>
+                <li>
+                    <a href="#">Events</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+<div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        
+                        <a href="#" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+           
 
 <%= yield %>
+
+         </div>
+                </div>
+            </div>
+        </div>
+
+
+</div>
 
 </body>
 </html>
